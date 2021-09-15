@@ -1,0 +1,27 @@
+logging:
+  level:
+    love:
+      forte:
+        simbot: debug
+
+simbot:
+  core:
+    # 扫描 simbot-bots目录下的所有 .bot 文件。
+    bot-resource-type: RESOURCE_FIRST
+
+
+
+#mysql
+spring:
+  datasource:
+    url: jdbc:mysql://49.235.83.241:3189/qq_rob?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root#0514
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis-plus:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: simbot.jaiser.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
